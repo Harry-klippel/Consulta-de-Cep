@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Cep</title>
+
+    <style>
+        input {
+            margin: 10px 0px 5px 3px;
+            border-radius: 3px;
+            padding: 4.4px;
+            
+        }
+
+        input:hover {
+            border: 2px solid rgb(0, 174, 255);
+        }
+
+        #cep {
+            width: 70px;
+        }
+
+        #ibge {
+            width: 80px;
+        }
+
+        #rua {
+            width: 300px;
+
+        }
+
+        #bairro {
+            width: 300px;
+
+        }
+
+        #estado{
+            width: 40px;
+
+        }
+
+        span {
+            margin-left: 10px;
+        }
+
+        .inputError {
+            border: 2px solid red
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <H2>Consulta de Cep</H2>
+        <p>Digte o CEP e ao sair do campo, o endereço será completado. Pode utilizar a tecla TAB após digitar o CEP</p> <br>
+
+            <form>
+                <div class="frm-row">
+                    <label for="cep">Cep:</label>
+                    <input type="text" name="cep" id="cep" maxlength="8">
+                </div>
+
+                <div class="frm-row">
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua" id="rua">
+                </div>
+
+                <div class="frm-row">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro">
+                </div>
+
+                <div class="frm-row">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
+
+                <div class="frm-row">
+                    <label for="estado">estado:</label>
+                    <input type="text" name="estado" id="estado">
+                </div>
+
+                <div class="frm-row">
+                    <label for="ibge">IBGE:</label>
+                    <input type="text" name="ibge" id="ibge">
+                </div>
+                
+            </form>
+
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
